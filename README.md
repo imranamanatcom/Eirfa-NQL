@@ -105,7 +105,11 @@ Eirfa NQL utilizes **Reinforcement Learning from Human Feedback (RLHF)**. If a u
 Beyond simple translation, Eirfa NQL analyzes the resulting database command for efficiency. Before execution, the engine optimizes the query to ensure it doesn't overwhelm server resources, selecting the most efficient indexes and join paths.
 
 
-### 2.4 The Reality of Dataset Availability: 2026 Benchmarks
+### The Reality of Dataset Availability: 2026 Benchmarks
+
+In 2026, the gap between data collection and data utility is reaching a critical breaking point. While the global data sphere is projected to grow to over **180 zettabytes**, the ability of the average business user to access this information remains severely limited.
+
+### 2.4 The "Shadow Data" Problem
 
 Despite massive investments in cloud data warehouses, a staggering **80% to 90% of enterprise data remains unstructured**—locked away in PDFs, emails, call transcripts, and internal documents.
 
