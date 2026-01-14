@@ -27,6 +27,10 @@ To illustrate the logical precision of **Eirfa Natural Query Language (Eirfa NQL
 
 The core logic of the system can be expressed as:
 
+$$
+E_{res} = \int_{i=1}^{n} \text{Parse}(L_i, S) \cdot \text{Context}(\mu)\, dt
+$$
+
 Where:
 
 * ****: The Natural Language input (the user's question).
