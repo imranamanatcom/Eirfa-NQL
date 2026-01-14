@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-In the modern enterprise, the "data bottleneck" is often caused by the syntax gap—the distance between a business user's question and the technical code required to answer it. **Eirfa NQL** bridges this gap using a proprietary orchestration of Transformers, Semantic Mapping, and Heuristic Optimisation. Unlike traditional keyword-based search, Eirfa NQL performs deep structural analysis to ensure 99% accuracy in data retrieval.
+In the modern enterprise, the "data bottleneck" is often caused by the syntax gap the distance between a business user's question and the technical code required to answer it. **Eirfa NQL** bridges this gap using a proprietary orchestration of Transformers, Semantic Mapping, and Heuristic Optimisation. Unlike traditional keyword-based search, Eirfa NQL performs deep structural analysis to ensure 99% accuracy in data retrieval.
 
 ---
 
