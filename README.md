@@ -23,7 +23,7 @@ This is where Eirfa NQL excels. The system maintains a "Live Schema Map" of your
 
 To illustrate the logical precision of **Eirfa Natural Query Language (Eirfa NQL)**, we can represent its operation as a mathematical transformation. In technical terms, Eirfa NQL functions as a function  that maps an unstructured set of human linguistic tokens () into a structured, executable relational set (), constrained by a specific database schema ().
 
-## The Eirfa NQL Transformation Formula
+### The Eirfa NQL Transformation Formula
 
 The core logic of the system can be expressed as:
 
