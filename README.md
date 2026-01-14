@@ -4,7 +4,7 @@ This white paper was designed, developed, and maintained by **Imran Malik**  | O
 in collaboration with the **Jalsonic Labs**
 
 
-# White Paper: Architectural Foundations of Eirfa NQL
+# White Paper: Architectural Foundations of Eirfa Natural Query Language (Eirfa NQL)
 
 ## Executive Summary
 
