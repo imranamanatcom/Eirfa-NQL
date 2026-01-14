@@ -1,3 +1,9 @@
+© 2026 **Imran Malik**.  
+
+This white paper was designed, developed, and maintained by **Imran Malik**  | ORCID iD: https://orcid.org/0009-0008-0339-1592
+in collaboration with the **Jalsonic Labs**
+
+
 # White Paper: Architectural Foundations of Eirfa NQL
 
 ## Executive Summary
