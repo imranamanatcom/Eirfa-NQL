@@ -74,7 +74,10 @@ LIMIT 3;
 
 **Accuracy and Confidence Scoring**
 
-For every transformation, Eirfa NQL calculates a **Confidence Coefficient ()**. If , the system triggers a **Clarification Loop** rather than executing the query, ensuring that users never receive "hallucinated" or incorrect data.
+For every transformation, Eirfa NQL calculates a Confidence Coefficient ($C_q$). If $C_q < 0.85$, the system triggers a Clarification Loop rather than executing the query, ensuring that users never receive "hallucinated" or incorrect data.
+
+$$C_q = \frac{\text{Mapped Entities}}{\text{Total Input Tokens}} \times \text{Semantic Probability}$$
+
 
 ---
 
