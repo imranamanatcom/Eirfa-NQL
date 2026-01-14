@@ -33,10 +33,11 @@ $$
 
 Where:
 
-* ****: The Natural Language input (the user's question).
-* ****: The Schema Metadata (tables, columns, and relationships).
-* ****: The session memory (context from previous questions).
-* ****: The Resulting Executable Query.
+- **L**: The Natural Language input (the user's question).
+- **S**: The Schema Metadata (tables, columns, and relationships).
+- **μ**: The session memory (context from previous questions).
+- **E<sub>res</sub>**: The Resulting Executable Query.
+
 
 **How the Formula Works in Practice**
 
