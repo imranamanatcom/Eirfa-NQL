@@ -21,6 +21,56 @@ This is where Eirfa NQL excels. The system maintains a "Live Schema Map" of your
 * **Feature:** It maps synonyms (e.g., "earnings," "revenue," and "top line" all map to the `total_sales` column).
 * **Benefit:** This prevents "Query Blindness," where a system fails because the user didn't use the exact technical column name.
 
+To illustrate the logical precision of **Eirfa Natural Query Language (Eirfa NQL)**, we can represent its operation as a mathematical transformation. In technical terms, Eirfa NQL functions as a function  that maps an unstructured set of human linguistic tokens () into a structured, executable relational set (), constrained by a specific database schema ().
+
+## The Eirfa NQL Transformation Formula
+
+The core logic of the system can be expressed as:
+
+Where:
+
+* ****: The Natural Language input (the user's question).
+* ****: The Schema Metadata (tables, columns, and relationships).
+* ****: The session memory (context from previous questions).
+* ****: The Resulting Executable Query.
+
+**How the Formula Works in Practice**
+
+Let’s apply this "formula" to a real-world scenario:
+**User Input ():** *"Who were the top 3 sellers in Paris last month?"*
+
+**Tokenization and Intent Extraction ()**
+
+The system first breaks the sentence into a vector of intent.
+
+* **Entities:** `[Sellers, Paris]`
+* **Temporal Constraint:** `[Last Month]`
+* **Operator:** `[Top 3]`  `ORDER BY desc LIMIT 3`
+
+**Schema Mapping and Semantic Linking ()**
+
+Eirfa NQL multiplies the user's intent by the known database schema (). It identifies that "Sellers" doesn't exist as a table, but maps semantically to the `Employees` table where `Role = 'Sales'`.
+
+**Structured Logic Synthesis**
+
+The final "Integration" step combines these variables into a precise command:
+
+```sql
+SELECT name, SUM(sales_amount) 
+FROM Employees 
+JOIN Sales ON Employees.id = Sales.employee_id
+WHERE city = 'Paris' 
+  AND date >= '2025-12-01' 
+GROUP BY name 
+ORDER BY SUM(sales_amount) DESC 
+LIMIT 3;
+
+```
+
+**Accuracy and Confidence Scoring**
+
+For every transformation, Eirfa NQL calculates a **Confidence Coefficient ()**. If , the system triggers a **Clarification Loop** rather than executing the query, ensuring that users never receive "hallucinated" or incorrect data.
+
 ---
 
 ## 2. Technical Component Breakdown
